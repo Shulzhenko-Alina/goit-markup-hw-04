@@ -24,7 +24,9 @@
     --text: #434455;
     --filters-button-color: #4D5AE5;
     --filters-button-background: #F4F4FD;  
-    --border: #8E8F99;;
+    --border: #8E8F99;
+    --background-footer-soc-link: #31D0AA;
+    --customers-accent: #404BBF;
 
 
 }
@@ -256,16 +258,14 @@ body {
     width: 264px;
 }
 
-
-
-.features-galery {
-    width: 264px;
+.features-box{
     height: 112px;
+
     display: flex;
-    background: #F4F4FD;
+    justify-content: center;
+    align-items: center;
+    background: var(--team-background);
     border-radius: 4px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .features-subtitle {
@@ -275,7 +275,6 @@ body {
     letter-spacing: 0.02em;
     background: var(--features-item-subtitle-background, #FFFFFF);
     margin-top: 8px;
-
 }
 
 .features-text {        
@@ -358,7 +357,7 @@ body {
 }
 
 .team-item{
-    background: #FFFFFF;
+    background:var(--hero-button);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     width: 264px;
@@ -403,17 +402,17 @@ body {
 
     border-radius: 50%;
 
-    background-color:#4D5AE5;
+    background-color: var(--filters-button-color);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .team-soc-icon{
-    color: #FFFFFF;
+    color: var(--hero-title-color);
 }
 .team-soc-link:is(:hover, :focus) {
-    background: #404BBF;
+    background: var(--customers-accent);
 }
 /*-------------CUSTOMERS-----------------*/
 
@@ -429,7 +428,7 @@ body {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #2E2F42;
+    color: var(--hero-background);
 
     margin-bottom: 72px;
 
@@ -462,11 +461,11 @@ body {
 }
 
 .customers-link:is(:hover, :focus) {
-    border-color:  #404BBF;
+    border-color:  var(--customers-accent);
 }
 
 .customers-link:is(:hover, :focus) .logo-customers{
-    fill: #404BBF;
+    fill: var(--customers-accent);
 }
 
 
@@ -530,7 +529,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02;
-    color: #FFFFFF;
+    color: var(--body-background);
 }
 
 .footer-soc-list {
@@ -556,7 +555,7 @@ body {
 }
 
 .footer-soc-link:is(:hover, :focus) {
-    background: #31D0AA;
+    background: var(--background-footer-soc-link);
 }
 
 /* ----------------------------------------------------------------PORTFOLIO -----------------------------------------------------*/
@@ -654,7 +653,7 @@ a {
     padding-top: 32px;
     padding-bottom: 32px;
 
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--footer-text-color);
     border-top: none;
 }
 
@@ -667,7 +666,7 @@ a {
 
 
 
-.item-subtitle:is(:hover, :focus) {
+.box-item:is(:hover, :focus) {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
