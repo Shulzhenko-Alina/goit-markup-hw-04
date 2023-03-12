@@ -163,8 +163,8 @@ body {
 /* ----------------------------------------------------------------HERO IMAGE------------------------------------------ */
 
 .hero {
-    
-    
+
+    max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
     url(../images/people-office\ 1.jpg);
     background-repeat: no-repeat;
@@ -173,7 +173,8 @@ body {
     text-align: center;   
     padding-top: 188px;
     padding-bottom: 188px;
-    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title {    
@@ -238,9 +239,13 @@ body {
 .features-list {
     display: flex;
     gap: 24px;
-
 }
 
+.features-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 .features{    
     padding-top: 120px;
     padding-bottom: 120px; 
@@ -249,7 +254,18 @@ body {
 .features-item {
     background: var(--features-item-subtitle-background, #FFFFFF);
     width: 264px;
+}
 
+
+
+.features-galery {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    background: #F4F4FD;
+    border-radius: 4px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .features-subtitle {
@@ -258,6 +274,8 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     background: var(--features-item-subtitle-background, #FFFFFF);
+    margin-top: 8px;
+
 }
 
 .features-text {        
@@ -267,22 +285,6 @@ body {
     color: var(--features-text);   
 
     margin-top: 8px;
-}
-.galery-item {
-    width: 264px;
-    padding: 24px 100px 24px 100px;
-    margin-bottom: 8px;
-    
-    background: #F4F4FD;
-    border-radius: 4px;
-}
-.galery-link {
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 
@@ -447,7 +449,6 @@ body {
 .customers-link {
     width: 100%;
     height: 100%;
-    padding: 16px 32px 16px 32px;
 
     display: flex;
     align-items: center;
@@ -535,7 +536,7 @@ body {
 .footer-soc-list {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
 }
 
 .footer-soc-link {
@@ -552,13 +553,10 @@ body {
 .footer-soc-item {
     width: 40px;
     height: 40px;
-
-    background: rgba(255, 255, 255/10%);
 }
 
 .footer-soc-link:is(:hover, :focus) {
     background: #31D0AA;
-    border-radius: 50%;
 }
 
 /* ----------------------------------------------------------------PORTFOLIO -----------------------------------------------------*/
@@ -634,7 +632,7 @@ a {
 
 
 .flex-container{   
-    display: flex;
+
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
@@ -667,11 +665,14 @@ a {
     background: var(--hero-title-color);
 }
 
-/*.box-item {
-    width: calc((100%-48)/3);
-    margin-right: 24px;
-    background-color: red;
-}*/
+
+
+.item-subtitle:is(:hover, :focus) {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
+
 
 .box-item:nth-child(3n) {
     margin-right: 0;
