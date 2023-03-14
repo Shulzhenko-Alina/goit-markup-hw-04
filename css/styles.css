@@ -558,7 +558,7 @@ body {
     background: var(--background-footer-soc-link);
 }
 
-/* ----------------------------------------------------------------PORTFOLIO -----------------------------------------------------*/
+/* -----------------------------------PORTFOLIO -----------------------------------------------------*/
 
 
 .subtitle-link{
@@ -587,7 +587,7 @@ body {
 a {
     text-decoration: none;
 }
-/*----------------------------------------------------------------SECTION-----------------------------------------*/
+/*------------------------------SECTION-----------------------------------------*/
 
 .filters-list.list {     
     padding: 0px;
@@ -627,7 +627,7 @@ a {
     background: var(--hero-button-hover);
 }
 
-/*-----------------------------------------FLEX-CONTAINER-------------------------------------------*/
+/*----------------------------FLEX-CONTAINER-------------------------------------------*/
 
 
 .flex-container{   
@@ -653,25 +653,21 @@ a {
     padding-top: 32px;
     padding-bottom: 32px;
 
-    border: 1px solid var(--footer-text-color);
     border-top: none;
 }
-
-
 
 .box-item{   
     width: 360px; 
     background: var(--hero-title-color);
+    border: 1px solid var(--footer-text-color);
 }
-
-
-
-.box-item:is(:hover, :focus) {
+.box-link{
+    display: block;
+}
+.box-link:hover,
+.box-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
-
-
 
 .box-item:nth-child(3n) {
     margin-right: 0;
